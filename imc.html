@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./imc.css">
+</head>
+
+<body>
+    <div class="container">
+
+        
+        
+
+        <input type="number" id="peso" placeholder="Peso (kg)">
+        <input type="number" id="altura" placeholder="Altura (ex: 1.75)">
+
+        <button onclick="calcularIMC()">Calcular</button>
+
+        <h2 id="resultado"></h2>
+
+        <table>
+            <tr>
+                <th>IMC</th>
+                <th>Classificação</th>
+            </tr>
+            <tr>
+                <td>&lt; 17</td>
+                <td>Muito abaixo do peso</td>
+            </tr>
+            <tr>
+                <td>17 - 18.49</td>
+                <td>Abaixo do peso</td>
+            </tr>
+            <tr>
+                <td>18.5 - 24.99</td>
+                <td>Peso normal</td>
+            </tr>
+            <tr>
+                <td>25 - 29.99</td>
+                <td>Acima do peso</td>
+            </tr>
+            <tr>
+                <td>30 - 34.99</td>
+                <td>Obesidade I</td>
+            </tr>
+            <tr>
+                <td>35 - 39.99</td>
+                <td>Obesidade II (severa)</td>
+            </tr>
+            <tr>
+                <td>&gt;= 40</td>
+                <td>Obesidade III (mórbida)</td>
+            </tr>
+        </table>
+
+    </div>
+
+    <script src="./imc.js"></script>
+</body>
+
+</html>
